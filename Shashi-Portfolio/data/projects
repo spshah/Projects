@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Projects | Shashi Prakash Shah</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Cabin:400,700,400italic|Crimson+Text:400italic' rel='stylesheet' 
+	
+</head>
+<body id="home">
+	<div id="wrapper">
+		<div id="nav">	
+			<div class="logo">
+				<a href="/"><img src="images/Index/77265.jpg" alt="Shashi Prakash Shah" /></a>
+			</div>
+			<ul>
+				<li><a href="Home">Home</a></li>
+				<li><a href="info">Info</a></li>
+				<li><a href="projects">Projects</a></li>
+			</ul>
+
+		</div><!-- End #nav -->
+
+
+		<div id="content">
+			
+			<div class="section">
+				<div class="block">
+					
+					<h3>Below is a collection of personal work and projects I've had a hand in over the last 2 years. If you like what you see or would like further information about anything, feel free to <a href="mailto:shahsps97@gmail.com">contact me</a>.</h3>
+					
+				</div>
+			</div>
+			
+			<hr border="500px" color="black"></hr>
+			<hr border="500px" color="black"></hr>
+			
+			
+			<div class="section">
+			
+				<div class="block">
+				
+					<h4>Web Design</h4>
+					<h2>My Portpolio</h2>
+					
+					<p>
+						I have designed my portfolio using HTML, Cascading Sheet Style, and Javascript. It consist of Index, Home, Info and Project.<br> In Index I have introduced it as my portfolio and it also redirect to "Home page" in 5 seconds. The design of my portfolio is inspired my some samples webpages present on internet.  
+						
+					</p>
+					
+					<div class="centeredBlock">
+						<img src="images/project/index.png" alt="Home page" />
+					</div>
+					
+				</div><!-- End .block -->
+
+			</div><!-- End .section -->
+			
+			<hr border="500px" color="black"></hr>
+			
+			<div class="section">
+				
+				<div class="block">
+
+					<h4>
+						Electronics Project
+					</h4>
+					
+					<h2>
+						Line Following Robot
+					</h2>
+					
+					<p>
+						I made a Line Following Robot with my friend using arduino, RF sensor array, and L293D IC(Integrated Circuit). The Robot sense the black line over white surface or while line over black surface and follow the line to the end.
+					</p>
+					
+					<div class="twoColumnBlock">
+						<div class="col">
+							<img src="images/project/robo1.jpg" alt="Robot" />
+						</div>
+						<div class="col">
+							<img src="images/project/robo2.jpg" alt="Robot" />
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					
+					<div class="twoColumnBlock">
+						<div class="col">
+							<img src="images/project/robo3.jpg"alt="Robot" />
+						</div>
+						<div class="col">
+							<img src="images/portfolio/robo_code.png" alt="Robo code" />
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					
+
+				</div><!-- End .block -->
+
+			</div><!-- End .section -->
+			
+			<hr border="500px" color="black"></hr>
+			
+			<div class="section">
+				
+				<div class="block">
+
+					<h4>
+						Software Project
+					</h4>
+					
+					<h2>
+						Calculator 
+					</h2>
+					
+					<p>
+						I designed a menu-driven calculator using C++. It has options to do standard calculations like addition, subtraction, division, multilpication and modulus, as well as it can do scientific calculation like finding square, cube, squareroot of a number. It can also find sine, cosine and tangent. I designed it to help my friend understand the concept of clases(OOP). 
+					</p>
+					
+					<div class="twoColumnBlock">
+						<div class="col">
+							<img src="images/project/calc.png" alt="calc_main" />
+						</div>
+						<div class="col">
+							<img src="images/project/calc_std.png" alt="calc_std" />
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					
+					<div class="twoColumnBlock">
+						<div class="col">
+							<img src="images/project/calc_sci.png" alt="calc_sci" />
+						</div>
+						<div class="col">
+							<img src="images/project/calc_add.png" alt="calc_addition" />
+						</div>
+						<div class="clearfix"></div>
+						
+						
+						<div class="twoColumnBlock">
+						<div class="col">
+							<img src="images/project/calc_code.png" alt="calc_code" />
+						</div>
+						<div class="col">
+							<img src="images/project/calc_code1.png" alt="calc_code" />
+						</div>
+						<div class="clearfix"></div>
+					</div>
+
+				</div><!-- End .block -->
+
+			</div><!-- End .section -->
+			
+			<hr border="500px" color="black"></hr>
+			
+			<div class="section">
+			
+				<div class="block">
+				
+				
+					<h2>Days of week</h2>
+					
+					<p>
+						I designed a program which will take birth-date of a person, and give the day of the week on which he/she was born as output. It can be also use to find the day of the week of any specifig date(except B.C).
+					</p>
+					
+					<div class="twoColumnBlock">
+						<div class="col">
+							<img src="images/project/date_finder.png" alt="Day finder" />
+						</div>
+						<div class="col">
+							<img src="images/project/date_code.png" alt="date_code" />
+						</div>
+						<div class="clearfix"></div>
+					
+				</div><!-- End .block -->
+
+			</div><!-- End .section -->
+			
+			<hr border="500px" color="black"></hr>
+			
+			
+			<div class="section">
+			
+				<div class="block">
+				
+				        <h4>Upcoming Projects</h4>
+					
+					<p>
+						Currently I am working on Library Management system ( using C++ ), and Marine Ecosystem, a miniature encyclopedia on fishes and corals ( using Javascript ). 
+					</p>
+					
+					<div class="twoColumnBlock">
+						<div class="col">
+							<img src="images/project/lib.png" alt="library_management_system" />
+						</div>
+						<div class="col">
+							<img src="images/project/fishwebsite.png" alt="Fish_Website" />
+						</div>
+						<div class="clearfix"></div>
+					
+				</div><!-- End .block -->
+
+			</div><!-- End .section -->
+	
+		</div><!-- End #content -->
+		
+	</div><!-- End #wrapper -->
+
+</body>
+</html>

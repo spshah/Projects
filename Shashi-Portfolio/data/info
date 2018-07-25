@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Projects | Shashi Prakash Shah</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Cabin:400,700,400italic|Crimson+Text:400italic' rel='stylesheet' 
+
+	
+</head>
+<body id="home">
+	<div id="wrapper">
+		<div id="nav">	
+			<div class="logo">
+				<a href="/"><img src="images/Index/77265.jpg" alt="Shashi Prakash Shah" /></a>
+			</div>
+			<ul>
+				<li><a href="Home">Home</a></li>
+				<li><a href="info">Info</a></li>
+				<li><a href="projects">Projects</a></li>
+			</ul>
+
+		</div><!-- End #nav -->
+
+		<div id="content">
+			
+			<div class="section">
+				<div class="block">
+					<div class="socialIconBlock">
+						<div class="col">
+								<a href="https://github.com/spshah" target="_blank"><img src="images/info/github-logo.png" alt="Shashi Github" /></a>
+						</div>
+						<div class="col">
+								<a href="https://www.codechef.com/users/shashi_97" target="_blank"><img src="images/info/codechef.jpeg" alt="Shashi CodeChef" /></a>
+						</div>
+						<div class="col">
+								<a href="https://www.linkedin.com/in/shashi-prakash-shah-466b38153/" target="_blank"><img src="images/info/linkedin.jpeg" alt="Shashi Linkedin" /></a>
+						</div>
+						<div class="clearfix"></div>
+					</div><!-- End .threeColumnBlock -->
+				</div>
+			</div>
+			
+			<hr border="500px" color="black"></hr>
+			
+			
+			<div class="section">
+				
+				<div class="block">
+
+					<h3>
+						Hi, I am Shashi Prakash Shah. I'm a student.
+					</h3>
+					
+					
+					<p>
+						I am currently pursuing "Bachelor of Technology" in "Computer Science and Engineering" From "Academy of Technology" which is affiliated to "Maulana Abul Kalam Azad University", Kolkata. I am looking for an Internship programme which will help me learn new things regarding my field and also brush up my  skills. I am skilled in C, C++, Python, HTML, CSS. I am familiar with JavaScript, PHP and MYSQL. I am comfortable with both Linux and Windows. if you provide me with the opportunity, I will give my best to work towards the betterment of both the organization and myself.<br>Hoping and looking forward to get a change in becoming a part of your team.</br><br> Thank you for your consideration.</br><br> I am enclosing my <a href="resume.pdf">resume.</a></br>
+					
+					</p>
+					
+					
+					<p>
+						So now that you know a little bit about me, feel free to contact me at  <a href="mailto:shahsps97@gmail.com">shahsps97@gmail.com</a>
+					</p>
+					
+					
+				</div><!-- End .block -->
+
+			</div><!-- End .section -->
+			
+			<hr border="500px" color="black"></hr>
+			
+			
+			<div class="section">
+				<div class="block">
+					
+					<h2>My Skills</h2>
+					
+					<div class="skills">
+						
+						<div class="col">
+							
+							<ul>
+								<li>C/C++</li>
+								<li>Data Structure</li><li>HTML</li>
+								<li>CSS</li>
+								<li>Python</li>
+								<li>PHP</li>
+								<li>MYSQL</li>
+								<li>Javascript</li>
+								
+								
+							</ul>
+							
+						</div>
+						
+						<div class="clearfix"></div>
+						
+					</div>
+					
+					
+					
+				</div>
+			</div>
+			
+			
+		
+
+		</div><!-- End #content -->
+		
+	</div><!-- End #wrapper -->
+
+</body>
+</html>
