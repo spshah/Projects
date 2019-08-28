@@ -111,7 +111,7 @@ def trans_btoe(text):
     
     #text=u"আমি শশী প্রকাশ শাহ"
     #text=u"হ্যালো"
-    key='AIzaSyAaf9gX9gR_ub2tUeu8CJaqKP-Yhh-NXM8'
+    key='ENTER YOUR KEY HERE'
     url = 'https://translation.googleapis.com/language/translate/v2/?'
     '''
     print(type(url),url)
