@@ -1,3 +1,3 @@
 # Calculator
 
-This is a menu-driven calculator written in C++. In this project I am implementing the basics of OOP in C++. 
+This is a menu-driven calculator written in C++. I have implemented this project, to learn the OOPs in C++.
