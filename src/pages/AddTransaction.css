@@ -1,0 +1,49 @@
+.add-transaction {
+    padding: 20px;
+}
+
+.add-transaction h1 {
+    text-align: center;
+}
+
+.add-transaction form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.add-transaction label {
+    font-weight: bold;
+}
+
+.add-transaction input, .add-transaction select {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.checkbox-group {
+    display: flex;
+    gap: 15px;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+

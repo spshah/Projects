@@ -1,0 +1,42 @@
+.entry-detail {
+    padding: 20px;
+}
+
+.entry-detail h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.net-balance {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.transactions {
+    margin-top: 20px;
+}
+
+.transactions div {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
