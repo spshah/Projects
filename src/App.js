@@ -2,7 +2,7 @@ import React from 'react';
 import CSVUpload from './pages/CSVUpload';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Dashboard from './components/Dashboard';
-import TransactionDetail from './components/TransactionDetail';
+import TransactionDetail from './components/TransactionDetails.js';
 import Home from './pages/Home.js';
 //function App() {
 //  return (

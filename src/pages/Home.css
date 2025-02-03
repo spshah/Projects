@@ -72,3 +72,312 @@
     }
 }
 
+
+
+
+.container {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    /* Make sure the container takes up full viewport height */
+    padding: 20px;
+}
+
+/* ... (rest of your CSS styles) */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* ... (styles for other elements) */
+
+.transactions {
+    flex-grow: 1;
+    /* Allow transactions section to take up available space */
+    overflow-y: auto;
+    /* Add scroll if transactions exceed container height */
+}
+
+/* styles.css */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    /* Remove default body margin */
+    background-color: #f4f4f4;
+    /* Light gray background */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 20px;
+    background-color: white;
+    /* White container background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    /* Light gray separator */
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-left span {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.add-member {
+    background-color: #eee;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+.header-right .pdf-button {
+    background-color: #eee;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+
+.search-bar {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.search-bar input[type="text"] {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.search-bar .search-button {
+    background-color: #4CAF50;
+    /* Green search button */
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.summary {
+    display: flex;
+    justify-content: space-around;
+    /* Distribute space evenly */
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f8f8f8;
+    /* Very light gray background */
+    border-radius: 5px;
+}
+
+.summary-item {
+    text-align: center;
+    /* Center text within summary items */
+}
+
+.summary-item span:first-child {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.filter-options {
+    display: flex;
+    gap: 10px;
+    /* Space between selects */
+    margin-bottom: 10px;
+}
+
+.filter-options select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+.view-reports {
+    background-color: #007bff;
+    /* Blue button */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.transactions {
+    flex-grow: 1;
+    overflow-y: auto;
+    border-top: 1px solid #ddd;
+    /* Add top border to transactions */
+}
+
+.transaction {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: flex-start;
+    /* Align items to the top of the container */
+    gap: 10px;
+    /* Space between transaction elements */
+}
+
+.transaction-date {
+    color: #777;
+    /* Gray date color */
+    font-size: 0.9em;
+    width: 120px;
+    /* Set a fixed width for the date */
+    flex-shrink: 0;
+    /* Prevent the date from shrinking */
+}
+
+.transaction-details {
+    flex-grow: 1;
+    /* Allow details to take up available space */
+}
+
+.transaction-description {
+    font-weight: bold;
+}
+
+.transaction-type {
+    color: #777;
+    font-size: 0.9em;
+}
+
+.transaction-amount {
+    width: 80px;
+    /* Fixed width for amount */
+    text-align: right;
+    flex-shrink: 0;
+    /* Prevent amount from shrinking */
+}
+
+.transaction-balance {
+    color: #777;
+    font-size: 0.9em;
+    width: 120px;
+    /* Fixed width for balance */
+    text-align: right;
+    flex-shrink: 0;
+    /* Prevent balance from shrinking */
+}
+
+
+.bottom-buttons {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+}
+
+.cash-in,
+.cash-out {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cash-in {
+    background-color: #28a745;
+    /* Green */
+    color: white;
+}
+
+.cash-out {
+    background-color: #dc3545;
+    /* Red */
+    color: white;
+}
+
+/* ... other styles as needed */
+
+/* styles.css */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    /* Light gray background for the entire page */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 20px;
+    background-color: white;
+    /* White background for the main content area */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* ... (other styles) */
+
+.summary {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f8f8f8;
+    /* Very light gray background for the summary */
+    /* Or use a different color if needed */
+    border-radius: 5px;
+}
+
+.transactions {
+    flex-grow: 1;
+    overflow-y: auto;
+    border-top: 1px solid #ddd;
+    background-color: #fff;
+    /* White background for the transactions list */
+    /* Or use a very light gray if you prefer */
+}
+
+.transaction {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    background-color: #fff;
+    /* White background for each transaction row */
+    /* Or use a very light gray for alternating rows:  &:nth-child(even) { background-color: #f9f9f9; } */
+}
+
+/* ... (rest of your CSS) */
+
+.bottom-buttons {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+    background-color: #fff;
+    /* White background for the bottom buttons area */
+}

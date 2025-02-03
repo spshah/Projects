@@ -16,7 +16,8 @@
     font-weight: bold;
 }
 
-.add-transaction input, .add-transaction select {
+.add-transaction input,
+.add-transaction select {
     padding: 10px;
     font-size: 16px;
     width: 100%;
@@ -47,3 +48,153 @@ button:hover {
     background-color: #45a049;
 }
 
+
+
+/*Added through gemini*/
+
+/* styles.css */
+.form-container {
+    background-color: #333;
+    /* Dark background */
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.back-button,
+.settings-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.2em;
+    /* Adjust size as needed */
+    cursor: pointer;
+}
+
+.form-title {
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #999;
+    /* Slightly lighter label color */
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="time"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #555;
+    /* Darker border */
+    background-color: #444;
+    /* Slightly lighter input background */
+    color: white;
+    border-radius: 4px;
+}
+
+.date-time {
+    display: flex;
+    gap: 10px;
+}
+
+.mic-button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+input[type="file"] {
+    /* Style the file input as needed */
+    padding: 5px;
+    /* Adjust padding as needed */
+    border: 1px solid #555;
+    background-color: #444;
+    border-radius: 4px;
+}
+
+.payment-options {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.payment-options label {
+    margin-bottom: 0;
+    /* Remove margin from radio labels */
+    color: white;
+}
+
+.payment-options input[type="radio"] {
+    margin-right: 5px;
+}
+
+.show-more {
+    background: none;
+    border: none;
+    color: #00a0e9;
+    /* Blue "Show More" text color */
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.add-more-fields {
+    background: none;
+    border: 1px solid #00a0e9;
+    /* Blue border */
+    color: #00a0e9;
+    /* Blue text */
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: flex-end;
+    /* Align buttons to the right */
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.save-add-new,
+.save {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.save-add-new {
+    background-color: #00a0e9;
+    /* Blue "Save & Add New" button */
+    color: white;
+}
+
+.save {
+    background-color: #666;
+    /* Gray "Save" button */
+    color: white;
+}
