@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "ES6",
+    "outDir": "out",
+    "lib": [ "ES6", "DOM" ], // Add "DOM" here to satisfy Axios's Fetch references
+    "sourceMap": true,
+    "rootDir": "src",
+    "strict": true,
+    "types": [ "node", "vscode" ] // Ensure node and vscode types are explicit
+  }
+}

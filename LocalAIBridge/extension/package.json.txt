@@ -1,0 +1,31 @@
+{
+  "name": "LocalAIBridge",
+  "displayName": "Local AI Bridge",
+  "version": "1.0.0",
+  "engines": { "vscode": "^1.75.0" },
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [{
+      "command": "local-ai-debugger.analyzeCode",
+      "title": "AI: Analyze Selection"
+    }],
+    "menus": {
+      "editor/context": [{
+        "command": "local-ai-debugger.analyzeCode",
+        "group": "navigation",
+        "when": "editorHasSelection"
+      }]
+    },
+    "configuration": {
+      "title": "Local AI Debugger",
+      "properties": {
+        "localAIDebugger.serverUrl": {
+          "type": "string",
+          "default": "http://127.0.0.1:8080/completion",
+          "description": "URL of your local llama-server"
+        }
+      }
+    }
+  }
+}
