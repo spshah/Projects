@@ -6,13 +6,18 @@
 
 #pragma comment(lib, "wininet.lib")
 
+bool isServerRunning = FALSE;
+
 // --- PART 1: THE SERVER RUNNER ---
 void RunServer() {
+	if (isServerRunning) {
+		return;
+	}
 	std::string llamaPath = "D:\\Shashi\\Misc\\llama-b8882-bin-win-vulkan-x64\\llama-server.exe";
 	//std::string modelPath = "D:\\Shashi\\Work\\CheckerApp_1\\Misc\\Qwen2.5-Coder-1.5B-Instruct-Q4_K_M.gguf";
 	std::string modelPath = "D:\\Shashi\\Misc\\Qwen2.5-Coder-7B-Instruct-Q4_K_M.gguf";
 	//std::string args = " -m \"" + modelPath + "\" -ngl 99 -c 4096 -t 4 --port 8080";
-	std::string args = " -m \"" + modelPath + "\" -ngl 8 -c 2048 -t 4 --port 8080";
+	std::string args = " -m \"" + modelPath + "\" -ngl 0 -c 2048 -t 4 --port 8080";
 	
 	std::string fullCmd = llamaPath + args;
 
@@ -108,46 +113,45 @@ void AskAI(std::string codeSnippet) {
 
 // --- PART 3: MAIN WITH ARGV HANDLING ---
 int main(int argc, char* argv[]) {
-		if (argc > 1) {
-			std::string inputCode = argv[1];
-			if (!inputCode.empty()) {
-				// 1. Silent Check: Is server already up?
-				HINTERNET hSession = InternetOpenA("Check", INTERNET_OPEN_TYPE_DIRECT, NULL, NULL, 0);
-				HINTERNET hConnect = InternetConnectA(hSession, "127.0.0.1", 8080, NULL, NULL, INTERNET_SERVICE_HTTP, 0, 0);
+	// 1. Silent Check: Is server already up?
+	HINTERNET hSession = InternetOpenA("Check", INTERNET_OPEN_TYPE_DIRECT, NULL, NULL, 0);
+	HINTERNET hConnect = InternetConnectA(hSession, "127.0.0.1", 8080, NULL, NULL, INTERNET_SERVICE_HTTP, 0, 0);
 
-				if (!hConnect) {
-					std::cout << "[Bridge] Server not detected. Launching AI Engine...\n";
-					RunServer();
-					// Give the model 3 seconds to load into VRAM/Vulkan before sending the request
-					Sleep(3000);
-				}
-				else {
-					InternetCloseHandle(hConnect);
-				}
-				InternetCloseHandle(hSession);
+	if (!hConnect) {
+		std::cout << "[Bridge] Server not detected. Launching AI Engine...\n";
+		RunServer();
+		// Give the model 3 seconds to load into VRAM/Vulkan before sending the request
+		Sleep(3000);
+	}
+	else {
+		InternetCloseHandle(hConnect);
+	}
+	InternetCloseHandle(hSession);
 
-				// 2. Proceed with Analysis
-				std::cout << "Analyzing selection from Visual Studio...\n";
-				AskAI(inputCode);
+	// 2. Proceed with Analysis
+	if (argc > 1) {
+		std::string inputCode = argv[1];
+		if (!inputCode.empty()) {
+			std::cout << "Analyzing selection from Visual Studio...\n";
+			AskAI(inputCode);
 
-				std::cout << "\n--- Done ---\nPress Enter to close.";
-				std::cin.get();
-				return 0;
-			}
+			std::cout << "\n--- Done ---\nPress Enter to close.";
+			std::cin.get();
+			return 0;
 		}
+	}
 
 	// Standard Interactive Menu
 	int choice;
 	while (true) {
-		std::cout << "\n1. Start AI Server\n2. Input Code Manually\n3. Exit\nSelection: ";
+		std::cout << "\n1. Input Code Manually\n2. Exit\nSelection: ";
 		if (!(std::cin >> choice)) {
 			std::cin.clear();
 			std::cin.ignore(1000, '\n');
 			continue;
 		}
 
-		if (choice == 1) RunServer();
-		else if (choice == 2) {
+		if (choice == 1) {
 			std::cin.ignore();
 			std::cout << "Enter code (Type 'END' on a new line to finish):\n";
 			std::string codeBlock, line;
@@ -156,7 +160,7 @@ int main(int argc, char* argv[]) {
 			}
 			if (!codeBlock.empty()) AskAI(codeBlock);
 		}
-		else if (choice == 3) break;
+		else if (choice == 2) break;
 	}
 	return 0;
 }

@@ -1,3 +1,5 @@
+.vs\
+Debug/
 node_modules/
 out/
 *.vsix
