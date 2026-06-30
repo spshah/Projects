@@ -46,7 +46,7 @@ ls -lh *.vsix
 2. Click **"Publish Extensions"**
 3. Sign in (GitHub, Microsoft, or email)
 4. Create Publisher:
-   - **Name**: `sairambkrishnan`
+   - **Name**: `spshah`
    - Accept terms
    - ✅ Done
 
@@ -71,7 +71,7 @@ ls -lh *.vsix
 ### A. Login to vsce
 
 ```bash
-npx @vscode/vsce login sairambkrishnan
+npx @vscode/vsce login spshah
 
 # When prompted:
 # Enter token: [paste your PAT from Step 2.B]
@@ -87,9 +87,9 @@ npx @vscode/vsce login sairambkrishnan
 npx @vscode/vsce publish
 
 # Expected output:
-# Publishing extension 'sairambkrishnan.claude-code-profile-switcher'...
+# Publishing extension 'spshah.claude-code-profile-switcher'...
 # [=============================] 100%
-# Successfully published sairambkrishnan.claude-code-profile-switcher@1.0.0
+# Successfully published spshah.claude-code-profile-switcher@1.0.0
 ```
 
 ---
@@ -98,14 +98,14 @@ npx @vscode/vsce publish
 
 ### A. Check Marketplace
 
-Visit: https://marketplace.visualstudio.com/items?itemName=sairambkrishnan.claude-code-profile-switcher
+Visit: https://marketplace.visualstudio.com/items?itemName=spshah.claude-code-profile-switcher
 
 Verify:
 - ✅ Extension name displays correctly
 - ✅ Icon shows
 - ✅ README renders
 - ✅ Version shows 1.0.0
-- ✅ Publisher is sairambkrishnan
+- ✅ Publisher is spshah
 
 ### B. Test Installation
 
@@ -125,7 +125,7 @@ In VS Code:
 ### "vsce: command not found"
 ```bash
 # Use npx instead
-npx @vscode/vsce login sairambkrishnan
+npx @vscode/vsce login spshah
 npx @vscode/vsce publish
 ```
 
@@ -163,7 +163,7 @@ npx @vscode/vsce package --no-dependencies
 
 # First time setup
 npm install
-npx @vscode/vsce login sairambkrishnan
+npx @vscode/vsce login spshah
 
 # Build
 npx @vscode/vsce package --no-dependencies
@@ -172,7 +172,7 @@ npx @vscode/vsce package --no-dependencies
 npx @vscode/vsce publish
 
 # Logout (if needed)
-npx @vscode/vsce logout sairambkrishnan
+npx @vscode/vsce logout spshah
 ```
 
 ---

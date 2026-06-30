@@ -3,7 +3,11 @@
   "displayName": "Claude Code Profile Switcher",
   "description": "Switch between Claude Code configuration profiles with visual indicators",
   "version": "1.0.0",
-  "publisher": "sairambkrishnan",
+  "publisher": "spshah",
+  "author": {
+    "name": "Shashi Shah",
+    "url": "https://github.com/spshah"
+  },
   "license": "MIT",
   "repository": {
     "type": "git",

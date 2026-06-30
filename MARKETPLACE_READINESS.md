@@ -127,7 +127,7 @@ SOFTWARE.
   "displayName": "Claude Code Profile Switcher",
   "description": "Switch between Claude Code configuration profiles with visual indicators",
   "version": "1.0.0",
-  "publisher": "sairambkrishnan",
+  "publisher": "spshah",
   
   // ADD THESE:
   "license": "MIT",
@@ -263,14 +263,14 @@ unzip -l claude-code-profile-switcher-1.0.0.vsix | head -20
 
 #### Step 3.1: Create Publisher Account
 
-If using a new publisher (`sairambkrishnan`):
+If using a new publisher (`spshah`):
 
 1. **Visit**: https://marketplace.visualstudio.com
 2. **Sign In**: Use GitHub, Microsoft, or email account
 3. **Create Publisher**:
    - Click **"Publish Extensions"** button
    - Follow prompts
-   - Name your publisher: `sairambkrishnan`
+   - Name your publisher: `spshah`
    - Accept terms
 
 #### Step 3.2: Create Personal Access Token (PAT)
@@ -291,7 +291,7 @@ If using a new publisher (`sairambkrishnan`):
 
 ```bash
 # First time: authenticate with vsce
-npx @vscode/vsce login sairambkrishnan
+npx @vscode/vsce login spshah
 
 # When prompted:
 # Enter token: [paste your PAT from Step 3.2]
@@ -307,15 +307,15 @@ cd vscode-extension/claude-code-profile-switcher/extension
 npx @vscode/vsce publish
 
 # Expected output:
-# Publishing extension 'sairambkrishnan.claude-code-profile-switcher'...
+# Publishing extension 'spshah.claude-code-profile-switcher'...
 # [=============================] 100%
-# Successfully published sairambkrishnan.claude-code-profile-switcher@1.0.0
+# Successfully published spshah.claude-code-profile-switcher@1.0.0
 ```
 
 #### Step 3.5: Verify Publication
 
 1. **Check Marketplace**:
-   - Visit: https://marketplace.visualstudio.com/items?itemName=sairambkrishnan.claude-code-profile-switcher
+   - Visit: https://marketplace.visualstudio.com/items?itemName=spshah.claude-code-profile-switcher
    - Confirm details are correct
    - Check icon, description, README render
 
@@ -364,10 +364,10 @@ npx @vscode/vsce publish
 Once published, the extension will appear as:
 
 ```
-Extension ID:  sairambkrishnan.claude-code-profile-switcher
+Extension ID:  spshah.claude-code-profile-switcher
 Display Name:  Claude Code Profile Switcher
 Version:       1.0.0
-Publisher:     Shashi Kumar (sairambkrishnan)
+Publisher:     Shashi Kumar (spshah)
 Category:      Other
 Keywords:      claude, profile, switcher, configuration
 
