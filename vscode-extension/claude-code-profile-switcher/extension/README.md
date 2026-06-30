@@ -1,8 +1,12 @@
 # Claude Code Profile Switcher
 
+**🟢 Marketplace Ready** | **v1.0.0** | **MIT License**
+
 Switch between multiple Claude Code accounts in VS Code with one click.
 
 If you use Claude Code with more than one account (e.g., work and personal), this extension lets you switch between them instantly — no manual symlink juggling, no terminal commands.
+
+> **Marketplace Status**: This extension is ready for VS Code Marketplace publishing. See the repository's `MARKETPLACE_READINESS.md` for publishing details.
 
 ## What It Does
 
