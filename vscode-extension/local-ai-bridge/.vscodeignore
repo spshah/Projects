@@ -1,0 +1,6 @@
+.vscode/**
+.git/**
+src/**
+tsconfig.json
+.eslintrc.json
+*.vsix

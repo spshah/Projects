@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F141C" />
+      <stop offset="100%" stop-color="#1E293B" />
+    </linearGradient>
+
+    <!-- VS Code Blue Gradient -->
+    <linearGradient id="vsBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3BF" />
+      <stop offset="100%" stop-color="#0066FF" />
+    </linearGradient>
+
+    <!-- Claude Orange Gradient -->
+    <linearGradient id="claudeOrange" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#D97706" />
+      <stop offset="100%" stop-color="#F59E0B" />
+    </linearGradient>
+    
+    <!-- Matrix Grid Pattern -->
+    <pattern id="matrixGrid" width="16" height="16" patternUnits="userSpaceOnUse">
+      <circle cx="8" cy="8" r="1" fill="#334155" opacity="0.6"/>
+    </pattern>
+  </defs>
+
+  <!-- Base Canvas Tile -->
+  <rect width="128" height="128" rx="26" fill="url(#bgGrad)" />
+
+  <!-- The Cross-Platform Matrix Hint (Background Grid) -->
+  <rect width="128" height="128" rx="26" fill="url(#matrixGrid)" />
+  
+  <!-- Subtle OS separating axes (The Matrix) -->
+  <line x1="64" y1="20" x2="64" y2="108" stroke="#334155" stroke-width="1" stroke-dasharray="4 4" />
+  <line x1="20" y1="64" x2="108" y2="64" stroke="#334155" stroke-width="1" stroke-dasharray="4 4" />
+
+  <!-- THE SYNC / SWITCH LOOP -->
+  <g transform="translate(64, 64)">
+    <!-- VS Code Blue Arrow (Top/Left Loop) -->
+    <path d="M -24,-30 C -45,-30 -45,10 -15,25" fill="none" stroke="url(#vsBlue)" stroke-width="8" stroke-linecap="round" />
+    <polygon points="-10,25 -22,17 -22,33" fill="url(#vsBlue)" />
+
+    <!-- Claude Orange Arrow (Bottom/Right Loop) -->
+    <path d="M 24,30 C 45,30 45,-10 15,-25" fill="none" stroke="url(#claudeOrange)" stroke-width="8" stroke-linecap="round" />
+    <polygon points="10,-25 22,-17 22,-33" fill="url(#claudeOrange)" />
+    
+    <!-- Center Core: Claude Code Terminal Symbol (>_) -->
+    <g transform="translate(-2, 0)" opacity="0.9">
+      <path d="M -10,-10 L 0,0 L -10,10" fill="none" stroke="#E2E8F0" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <line x1="4" y1="10" x2="14" y2="10" stroke="#E2E8F0" stroke-width="3.5" stroke-linecap="round" />
+    </g>
+  </g>
+</svg>

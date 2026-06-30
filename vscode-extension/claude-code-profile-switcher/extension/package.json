@@ -1,0 +1,70 @@
+{
+  "name": "claude-code-profile-switcher",
+  "displayName": "Claude Code Profile Switcher",
+  "description": "Switch between Claude Code configuration profiles with visual indicators",
+  "version": "1.0.0",
+  "publisher": "sairambkrishnan",
+  "engines": {
+    "vscode": "^1.94.0"
+  },
+  "icon": "icon.png",
+  "categories": ["Other"],
+  "keywords": ["claude", "profile", "switcher", "configuration"],
+  "activationEvents": ["onStartupFinished"],
+  "main": "./src/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "claudeProfileSwitcher.switchProfile",
+        "title": "Claude: Switch Profile"
+      },
+      {
+        "command": "claudeProfileSwitcher.setupProfiles",
+        "title": "Claude: Setup Profiles"
+      }
+    ],
+    "configuration": {
+      "title": "Claude Profile Switcher",
+      "properties": {
+        "claudeProfileSwitcher.profiles": {
+          "type": "array",
+          "scope": "application",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string",
+                "description": "Display name for this profile"
+              },
+              "configDir": {
+                "type": "string",
+                "description": "Absolute path to the Claude config directory (~ is expanded)"
+              }
+            },
+            "required": ["name", "configDir"]
+          },
+          "default": [
+            {
+              "name": "Work",
+              "configDir": "~/.claude-work"
+            },
+            {
+              "name": "Personal",
+              "configDir": "~/.claude-personal"
+            }
+          ],
+          "description": "List of Claude Code profiles to switch between. User-only setting: cannot be set per-workspace, since a workspace's .vscode/settings.json is untrusted input and this setting drives filesystem and shell changes."
+        },
+        "claudeProfileSwitcher.symlinkPath": {
+          "type": "string",
+          "scope": "application",
+          "default": "~/.claude",
+          "description": "Path to the Claude symlink that gets repointed on switch. User-only setting (see claudeProfileSwitcher.profiles)."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "package": "npx @vscode/vsce package --no-dependencies"
+  }
+}

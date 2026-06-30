@@ -1,5 +1,72 @@
-.vs\
+# Visual Studio / Build Artifacts
+.vs/
+.vscode/
+bin/
+obj/
+*.user
+*.suo
+*.sln.docstates
+*.userprefs
+*.pidb
+*.psess
+*.vsp
+*.vspx
+*.coverage
+*.coveragexml
 Debug/
+Release/
+x64/
+x86/
+[Oo]bj/
+[Bb]in/
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+.history/
+.ionide/
+
+# Node.js / npm (VS Code Extensions)
 node_modules/
+npm-debug.log
+npm-debug.log*
+package-lock.json
+yarn-error.log
+dist/
 out/
+.eslintcache
+.parcel-cache
+
+# Build outputs
 *.vsix
+*.nupkg
+*.snupkg
+
+# IDE Specific
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Test Coverage
+coverage/
+.nyc_output/
+
+# Dependencies
+.grunt/
+.node_modules/
+
+# Misc
+.env
+.env.local
+.env.*.local
+*.log
+*.tmp
+.cache/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
