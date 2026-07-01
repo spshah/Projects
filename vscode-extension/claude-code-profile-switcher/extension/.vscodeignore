@@ -9,6 +9,11 @@ node_modules/**
 tsconfig.json
 webpack.config.js
 
+# Asset files (keep only icon.png, exclude originals and variants)
+icon_org.png
+icon.svg
+*.backup.png
+
 # CI/CD
 .github
 .gitlab-ci.yml

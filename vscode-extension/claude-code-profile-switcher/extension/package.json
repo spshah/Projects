@@ -36,7 +36,6 @@
     "onStartupFinished"
   ],
   "main": "./src/extension.js",
-
   "files": [
     "src/**",
     "icon.png",
