@@ -229,10 +229,7 @@ async function createProfile() {
         env: { CLAUDE_CONFIG_DIR: configDir },
     });
     terminal.show();
-    terminal.sendText(`echo "=== Authenticate your '${name}' Claude profile ==="`);
-    terminal.sendText(`echo "Config dir: ${configDir}"`);
-    terminal.sendText(`echo "Run: claude auth login"`);
-    terminal.sendText(`echo "Then click 'Done' in the notification above."`);
+    terminal.sendText(`echo "=== Authenticate your '${name}' Claude profile ==="; echo "Config dir: ${configDir}"; echo "Run: claude auth login"; echo "Then click 'Done' in the notification above."`, true);
 
     await vscode.window.showInformationMessage(
         `Authenticate your "${name}" profile in the terminal, then click Done.`,
