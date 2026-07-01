@@ -18,12 +18,24 @@
   },
   "homepage": "https://github.com/spshah/Projects/tree/master/vscode-extension/claude-code-profile-switcher",
   "engines": {
+    "node": ">=20",
     "vscode": "^1.94.0"
   },
   "icon": "icon.png",
-  "categories": ["Other"],
-  "keywords": ["claude", "profile", "switcher", "configuration", "account", "multi-account"],
-  "activationEvents": ["onStartupFinished"],
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "claude",
+    "profile",
+    "switcher",
+    "configuration",
+    "account",
+    "multi-account"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
   "main": "./src/extension.js",
   "contributes": {
     "commands": [
@@ -54,7 +66,10 @@
                 "description": "Absolute path to the Claude config directory (~ is expanded)"
               }
             },
-            "required": ["name", "configDir"]
+            "required": [
+              "name",
+              "configDir"
+            ]
           },
           "default": [
             {
@@ -78,6 +93,9 @@
     }
   },
   "scripts": {
-    "package": "npx @vscode/vsce package --no-dependencies"
+    "package": "vsce package --no-dependencies"
+  },
+  "devDependencies": {
+    "@vscode/vsce": "^3.9.2"
   }
 }
