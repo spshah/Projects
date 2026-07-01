@@ -1,5 +1,5 @@
 {
-  "name": "claude-profile-switcher",
+  "name": "claude-config-switcher",
   "displayName": "Claude Code Profile Switcher",
   "description": "Switch between Claude Code configuration profiles with visual indicators",
   "version": "1.0.0",

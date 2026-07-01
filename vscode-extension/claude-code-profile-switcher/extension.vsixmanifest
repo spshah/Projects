@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011">
   <Metadata>
-    <Identity Language="en-US" Id="claude-profile-switcher" Version="1.0.0" Publisher="spshah"/>
+    <Identity Language="en-US" Id="claude-config-switcher" Version="1.0.0" Publisher="spshah"/>
     <DisplayName>Claude Code Profile Switcher</DisplayName>
     <Description xml:space="preserve">Switch between Claude Code configuration profiles with visual indicators</Description>
     <Tags>claude,profile,switcher,configuration</Tags>
