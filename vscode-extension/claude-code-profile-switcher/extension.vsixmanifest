@@ -3,7 +3,7 @@
   <Metadata>
     <Identity Language="en-US" Id="claude-config-switcher" Version="1.0.0" Publisher="spshah"/>
     <DisplayName>Claude Code Profile Switcher</DisplayName>
-    <Description xml:space="preserve">Switch between Claude Code configuration profiles with visual indicators</Description>
+    <Description xml:space="preserve">Instantly switch between multiple Claude Code accounts in VS Code</Description>
     <Tags>claude,profile,switcher,configuration</Tags>
     <Categories>Other</Categories>
     <GalleryFlags>Public</GalleryFlags>

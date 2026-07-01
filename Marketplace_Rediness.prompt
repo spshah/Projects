@@ -1,0 +1,161 @@
+Perform a comprehensive "VS Code Marketplace Readiness Review" of this extension. Treat this as if you were reviewing a production extension before it is published to the Visual Studio Marketplace.
+
+Goal:
+Polish every aspect of the extension so it looks and feels like a high-quality, professional Marketplace extension.
+
+Review and improve the following:
+
+1. package.json
+- Validate all metadata.
+- Check name, displayName, description, keywords, categories.
+- Ensure publisher, repository, homepage, bugs, license, icon, engines, activationEvents, and contributes are appropriate.
+- Improve the short description for discoverability.
+- Suggest better keywords for Marketplace search.
+- Verify versioning and semantic versioning.
+
+2. README.md
+Review the README from the perspective of a Marketplace visitor.
+
+Improve:
+- Title
+- Introduction
+- Features
+- Animated demo/GIF placeholders (if missing)
+- Screenshots section
+- Installation
+- Quick Start
+- Configuration
+- Commands
+- Status bar behavior
+- Limitations
+- FAQ
+- Troubleshooting
+- Changelog link
+- License
+- Contributing
+
+Remove ALL development-only or repository-only information.
+
+For example, text like:
+
+"Marketplace Status: This extension is ready for VS Code Marketplace publishing. See MARKETPLACE_READINESS.md..."
+
+must NOT appear in the published README.
+
+The README should be written for end users, not developers.
+
+3. Marketplace Presentation
+Review how the extension would appear on the Marketplace.
+
+Evaluate:
+- first impression
+- professionalism
+- clarity
+- readability
+- discoverability (SEO)
+- trustworthiness
+
+Suggest improvements to:
+- display name
+- description
+- feature bullets
+- screenshots
+- icon
+- badges
+- branding consistency
+
+4. Extension UX
+Review the extension itself.
+
+Check:
+- command names
+- command titles
+- configuration descriptions
+- setting names
+- status bar text
+- notifications
+- Quick Pick labels
+- error messages
+- success messages
+
+Make all user-facing text polished, concise, and consistent.
+
+5. Marketplace Assets
+Verify:
+- icon resolution and quality
+- README image references
+- GIF recommendations
+- screenshots needed
+- LICENSE
+- CHANGELOG
+- .vscodeignore or files whitelist
+
+Recommend any missing assets.
+
+6. Code Review
+Review the extension code for:
+- unused code
+- dead files
+- logging left in production
+- TODO/FIXME comments
+- debug code
+- inefficient APIs
+- activation performance
+- VS Code API best practices
+- error handling
+
+7. Security Review
+Check for:
+- unsafe filesystem operations
+- command injection
+- symlink safety
+- path traversal
+- improper shell usage
+- unsafe configuration handling
+
+Recommend improvements where necessary.
+
+8. Marketplace Compliance
+Ensure the extension complies with VS Code Marketplace expectations.
+
+Verify:
+- package size
+- icon
+- README
+- license
+- activation events
+- categories
+- keywords
+- repository links
+- publisher metadata
+
+9. Final Polish
+Find every piece of text that sounds like it was written for developers instead of users.
+
+Rewrite it in professional, user-friendly language.
+
+Examples include:
+- internal notes
+- implementation details
+- publishing notes
+- repository references
+- TODOs
+- debugging instructions
+
+These should not appear in the published extension.
+
+10. Final Report
+Produce a report with four sections:
+
+A. Critical issues (must fix before publishing)
+B. Recommended improvements
+C. Nice-to-have enhancements
+D. Overall Marketplace readiness score (0–100)
+
+For every issue:
+- Explain why it matters.
+- Show the current content.
+- Show the improved content.
+- Apply the improvements directly where appropriate.
+
+Do not make superficial changes. Prioritize improvements that enhance user experience, Marketplace discoverability, professionalism, and publish readiness.
