@@ -221,7 +221,42 @@ async function createProfile() {
     const dirName = sanitizeProfileName(name);
     const configDir = path.join(os.homedir(), `.claude-${dirName}`);
     const configDirShort = `~/.claude-${dirName}`;
+    const defaultClaudeDir = path.join(os.homedir(), '.claude');
 
+    // Check if existing Claude Code authentication exists
+    const existingAuthExists = fs.existsSync(defaultClaudeDir) &&
+        fs.readdirSync(defaultClaudeDir).length > 0;
+
+    if (existingAuthExists) {
+        const choice = await vscode.window.showInformationMessage(
+            `Found existing Claude Code authentication. Copy it to "${name}" profile?`,
+            'Yes, copy it',
+            'No, authenticate separately'
+        );
+
+        if (choice === 'Yes, copy it') {
+            // Create backup of current ~/.claude
+            const backupDir = path.join(os.homedir(), '.claude-backup');
+            if (fs.existsSync(defaultClaudeDir)) {
+                const backupExists = fs.existsSync(backupDir);
+                if (backupExists) {
+                    // Remove old backup
+                    fs.rmSync(backupDir, { recursive: true });
+                }
+                // Copy ~/.claude to ~/.claude-backup
+                fs.cpSync(defaultClaudeDir, backupDir, { recursive: true });
+            }
+
+            // Copy ~/.claude to new profile
+            fs.cpSync(defaultClaudeDir, configDir, { recursive: true });
+            vscode.window.showInformationMessage(
+                `"${name}" profile created with existing authentication. Backup saved to ~/.claude-backup`
+            );
+            return { name: name.trim(), configDir: configDirShort };
+        }
+    }
+
+    // Manual authentication flow
     fs.mkdirSync(configDir, { recursive: true });
 
     const terminal = vscode.window.createTerminal({
