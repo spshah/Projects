@@ -1,5 +1,5 @@
 {
-  "name": "claude-code-profile-switcher",
+  "name": "claude-profile-switcher",
   "displayName": "Claude Code Profile Switcher",
   "description": "Switch between Claude Code configuration profiles with visual indicators",
   "version": "1.0.0",
@@ -18,7 +18,6 @@
   },
   "homepage": "https://github.com/spshah/Projects/tree/master/vscode-extension/claude-code-profile-switcher",
   "engines": {
-    "node": ">=20",
     "vscode": "^1.94.0"
   },
   "icon": "icon.png",
@@ -37,6 +36,17 @@
     "onStartupFinished"
   ],
   "main": "./src/extension.js",
+
+  "files": [
+    "src/**",
+    "icon.png",
+    "README.md",
+    "LICENSE"
+  ],
+  "galleryBanner": {
+    "color": "#1f2937",
+    "theme": "dark"
+  },
   "contributes": {
     "commands": [
       {
@@ -83,6 +93,7 @@
           ],
           "description": "List of Claude Code profiles to switch between. User-only setting: cannot be set per-workspace, since a workspace's .vscode/settings.json is untrusted input and this setting drives filesystem and shell changes."
         },
+
         "claudeProfileSwitcher.symlinkPath": {
           "type": "string",
           "scope": "application",
