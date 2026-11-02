@@ -309,3 +309,10 @@ Each extension is licensed separately:
 - **Ollama**: https://ollama.ai
 - **VS Code Extension API**: https://code.visualstudio.com/api
 - **VS Extension Development**: https://docs.microsoft.com/en-us/visualstudio/extensibility/
+
+## Legacy Projects
+
+The repository root also holds older, finished coursework/demo projects from before this became an
+extensions monorepo (`Bird_Species_Classification/`, `Chatbot/`, `Inframind-Kirana/`,
+`Shashi-Portfolio/`, `side_small_projects/`). They're archival — not under active development and
+unrelated to the extensions above.
